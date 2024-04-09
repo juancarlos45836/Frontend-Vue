@@ -21,6 +21,9 @@ export default {
           '75%, 100%': { 'margin-left': '-300%' }
         }
       }
+    },
+    width: {
+      'fill-available': '-webkit-fill-available'
     }
   },
   plugins: []

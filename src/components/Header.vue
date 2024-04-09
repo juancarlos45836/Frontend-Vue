@@ -2,21 +2,21 @@
 <template>
   <div class="w-full h-auto">
     <header class="bg-[#FFE600] w-full flex relative justify-center h-[100px] top-0 left-0">
-      <div class="w-full flex flex-col mt-0 h-[100px] justify-center">
+      <div class="w-[1540px] flex flex-col mt-0 h-[100px] justify-center">
         <div class="h-[100px] w-full justify-center flex flex-row mt-0">
-          <div class="ml-[10%] flex flex-col mr-10 justify-between cursor-pointer py-3">
-            <img src="../images/logo_large_plus.webp" alt="" />
-            <div class="flex flex-row">
-              <img class="w-5" src="../assets/ubicacion.png" alt="ubicacion" />
+          <div class="flex flex-col justify-between w-[140px] cursor-pointer py-3">
+            <img class="w-[140px]" src="../images/logo_large_plus.webp" alt="" />
+            <div class="w-[140px] flex flex-row">
+              <img class="w-[20px]" src="../assets/ubicacion.png" alt="ubicacion" />
               <p class="text-[13px] w-full cursor-pointer">Ingresa tu domicilio</p>
             </div>
           </div>
           <div
-            class="flex py-3 justify-between flex-col shadow-sm text-[14px] pl-3 placeholder-blue-800 placeholder-opacity-30 focus:border-blue-500 focus:ring-blue-800 focus:outline-1 focus:outline-blue-400"
+            class="flex py-3 w-full justify-between flex-col shadow-sm text-[14px] pl-3 placeholder-blue-800 placeholder-opacity-30 focus:border-blue-500 focus:ring-blue-800 focus:outline-1 focus:outline-blue-400"
           >
-            <div class="flex flex-row">
+            <div class="flex w-full flex-row">
               <input
-                class="w-full h-[40px] shadow-md pl-5"
+                class="w-fill-available h-[40px] shadow-md pl-5"
                 type="text"
                 placeholder="Buscar productos, marcas y mas..."
               />
@@ -27,8 +27,7 @@
               />
             </div>
 
-            <div class="flex flex-row text-[13px]">
-              <p class="mr-2 cursor-pointer">Ingresa tu domicilio</p>
+            <div class="flex flex-row text-[13px] justify-center flex-wrap">
               <p class="mr-2 cursor-pointer">Categorias</p>
               <p class="mr-2 cursor-pointer">Ofertas</p>
               <p class="mr-2 cursor-pointer">Historial</p>
@@ -40,21 +39,21 @@
             </div>
           </div>
 
-          <div class="mr-[10%] py-3 flex flex-col w-auto justify-between">
-            <divc class="w-auto">
+          <div class="py-3 flex flex-col w-[380px] justify-between">
+            <div>
               <img
                 src="../images/disney.webp"
-                class="h-[40px] cursor-pointer ml-10 w-[90%]"
+                class="h-auto w-fill-available cursor-pointer ml-10"
                 alt=""
               />
-            </divc>
+            </div>
             <div
-              class="flex flex-row w-full items-center justify-center ml-10 text-[13px] mr-[10%]"
+              class="flex flex-row w-full items-center flex-wrap justify-center ml-10 text-[13px]"
             >
-              <p class="mr-2 cursor-pointer">Crear tu cuenta</p>
-              <p class="mr-2 cursor-pointer">Ingresa</p>
-              <p class="mr-2 cursor-pointer">Mis compras</p>
-              <img class="ml-5 w-4 cursor-pointer" src="../assets/carrito.png  " alt="carrito" />
+              <p class="mr-2 flex cursor-pointer">Crea tu cuenta</p>
+              <p class="mr-2 flex cursor-pointer">Ingresa</p>
+              <p class="mr-2 flex cursor-pointer">Mis compras</p>
+              <img class="w-[20px] cursor-pointer" src="../assets/carrito.png  " alt="carrito" />
             </div>
           </div>
         </div>

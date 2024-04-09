@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import Encabezado from './components/Encabezado.vue'
+import Header from './components/Header.vue'
+import Slider from './components/Slider.vue'
 </script>
 
 <template>
-  <Encabezado />
+  <Header />
+  <slider />
 </template>

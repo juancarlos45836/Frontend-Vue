@@ -1,13 +1,22 @@
 <script setup></script>
 <template>
   <div class="w-full h-auto">
-    <header class="bg-[#FFE600] w-full flex relative justify-center h-[100px] top-0 left-0">
-      <div class="w-[1540px] flex flex-col mt-0 h-[100px] justify-center">
-        <div class="h-[100px] w-full justify-center flex flex-row mt-0">
-          <div class="flex flex-col justify-between w-[140px] cursor-pointer py-3">
-            <img class="w-[140px]" src="../images/logo_large_plus.webp" alt="" />
-            <div class="w-[140px] flex flex-row">
-              <img class="w-[20px]" src="../assets/ubicacion.png" alt="ubicacion" />
+    <header
+      class="bg-[#FFE600] w-full flex relative justify-center h-[60px] md:h-[100px] top-0 left-0"
+    >
+      <div class="w-full md:w-[1540px] flex flex-col mt-0 h-[60px] md:h-[100px] justify-center">
+        <div class="h-[60px] md:h-[100px] w-full justify-center flex flex-row mt-0">
+          <div
+            class="flex flex-col py-0 ml-2 md:ml-0 justify-center md:justify-between md:w-[140px] cursor-pointer md:py-3"
+          >
+            <img src="../assets/logomercado.png" class="visible md:hidden w-[90%]" alt="" />
+            <img
+              class="hidden md:visible md:flex w-0 md:w-[140px]"
+              src="../images/logo_large_plus.webp"
+              alt=""
+            />
+            <div class="hidden md:visible w-[140px] md:flex flex-row">
+              <img class="h-auto w-[20px]" src="../assets/ubicacion.png" alt="ubicacion" />
               <p class="text-[13px] w-full cursor-pointer">Ingresa tu domicilio</p>
             </div>
           </div>
@@ -27,7 +36,7 @@
               />
             </div>
 
-            <div class="flex flex-row text-[13px] justify-center flex-wrap">
+            <div class="invisible md:visible flex flex-row text-[13px] justify-center flex-wrap">
               <p class="mr-2 cursor-pointer">Categorias</p>
               <p class="mr-2 cursor-pointer">Ofertas</p>
               <p class="mr-2 cursor-pointer">Historial</p>
@@ -38,8 +47,16 @@
               <p class="mr-2 cursor-pointer">Ayuda</p>
             </div>
           </div>
+          <div class="w-[100px] md:hidden ml-1 pl-1 flex items-center flex-row">
+            <img class="w-[20px]" src="../assets/menu.png" alt="" />
+            <img
+              class="w-[20px] h-[20px] ml-1 cursor-pointer"
+              src="../assets/carrito.png  "
+              alt="carrito"
+            />
+          </div>
 
-          <div class="py-3 flex flex-col w-[380px] justify-between">
+          <div class="hidden md:visible py-3 md:flex flex-col md:w-[380px] justify-between">
             <div>
               <img
                 src="../images/disney.webp"

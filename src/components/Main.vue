@@ -61,12 +61,12 @@ const moveLeft = () => {
 </script>
 
 <template>
-  <div class="bg-[#EBEBEB] h-[100vh] relative w-[100vw] overflow-auto flex">
-    <div class="relative flex justify-center w-full">
+  <div class="bg-[#EBEBEB] h-[100vh] relative overflow-x-hidden w-full flex">
+    <div class="relative flex justify-center">
       <div
         v-for="(image, index) in arrayImages"
         :key="index"
-        :class="`w-[100vw] absolute top-0 left-0 flex justify-center`"
+        :class="`w-[100vw] absolute top-0 left-0  flex justify-center`"
         :style="{
           transform: `translateX(${image.positionImage}%)`,
           transition: `transform 1s`

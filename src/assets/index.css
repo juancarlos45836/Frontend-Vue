@@ -2,3 +2,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mask {
+  mask-image: linear-gradient(yellow 80%, transparent);
+}

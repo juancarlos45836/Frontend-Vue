@@ -25,7 +25,13 @@ export default {
     width: {
       'fill-available': '-webkit-fill-available'
     },
+    maskImage: {
+      // Definiendo una utilidad personalizada llamada 'gradient-to-b'
+      'mask-image': 'linear-gradient( white 80%, transparent)'
+    },
     screens: {
+      sm: '400px',
+
       md: '800px',
       // => @media (min-width: 640px) { ... }
 

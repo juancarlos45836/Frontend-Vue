@@ -4,5 +4,8 @@
 @tailwind utilities;
 
 .mask {
-  mask-image: linear-gradient(yellow 80%, transparent);
+  mask-image: linear-gradient(rgb(250, 250, 248) 80%, transparent);
+}
+.gradient {
+  background: linear-gradient(to bottom, #ffe600 50%, transparent 50%);
 }

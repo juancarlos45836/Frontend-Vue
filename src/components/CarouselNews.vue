@@ -54,59 +54,9 @@ function updateHeight() {
   }
 }
 console.log(size.value.height)
-
-// Methods are available in this reference
-
-// setInterval(() => {
-//   moveLeft()
-// }, 5000)
-
-// const moveLeft = () => {
-//   for (let index = 0; index < arrayImages.length; index++) {
-//     if (arrayImages[index].positionImage < 200) {
-//       arrayImages[index].visible = 'visible'
-//       arrayImages[index].duration = 5000
-//     } else {
-//       arrayImages[index].visible = 'hidden'
-//       arrayImages[index].duration = 0
-//     }
-
-//     arrayImages[index].positionImage = arrayImages[index].positionImage - 100
-//     if (arrayImages[index].positionImage === -200) {
-//       arrayImages[index].positionImage = arrayImages.length * 100 + arrayImages[index].positionImage
-//       arrayImages[index].visible = 'hidden'
-//       arrayImages[index].duration = 0
-//     }
-
-//     console.log('imagen', index, '=', arrayImages[index].positionImage)
-//   }
-// }
 </script>
 
 <template>
-  <!-- <div class="bg-[#EBEBEB] h-[100vh] relative overflow-x-hidden w-full flex">
-    <div class="relative flex justify-center">
-      <div
-        v-for="(image, index) in arrayImages"
-        :key="index"
-        :class="`w-[100vw] absolute top-0 left-0  flex justify-center`"
-        :style="{
-          transform: `translateX(${image.positionImage}%)`,
-          transition: `transform 1s`
-        }"
-      >
-        <img
-          :src="image.image"
-          alt="Imagen con degradado"
-          class="mask"
-          :style="{
-            visibility: `${image.visible}`
-          }"
-        />
-      </div>
-    </div>
-
-  </div> -->
   <div class="relative w-[100vw] gradient h-auto">
     <div class="gradient relative mask-top h-auto z-0" ref="myDiv">
       <Carousel

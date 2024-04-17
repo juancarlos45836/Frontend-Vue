@@ -1,3 +1,6 @@
 body {
-  overflow: hidden;
+  overflow: auto;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
